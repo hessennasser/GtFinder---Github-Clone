@@ -62,66 +62,54 @@
     </header>
 
     <main class="main" id="main">
-        <ul class="container">
+
+        <div class="container">
+
             <!-- 
             - #Profile
             -->
+            <section class="profile" data-profile-card></section>
 
-            <section class="profile" data-profile-card>
-                <figure class="avatar-circle img-holder" style="--width: 280;--height: 280px">
-                    <img src="./assets/images/profile.jpg" width="280px" height="280px" alt="smartdev"
-                        class="img-cover">
-                    </figure>
-                    <h1 class="title-2">Hessen Nasser</h1>
-                    <p class="username text-primary">hessennasser </p>
-                    <p class="bio">Front end developer</p>
-
-                <a href="#" target="_blank" class="btn btn-secondary"><span class="material-symbols-rounded"
-                        aria-hidden="true">open_in_new</span>See on Github</a>
-
-                <ul class="profile-meta">
-                    <li class="meta-item">
-                        <span class="material-symbols-rounded" aria-hidden="true">apartment</span>
-                        <span class="meta-text">smartdev</span>
-                    </li>
-                    <li class="meta-item">
-                        <span class="material-symbols-rounded" aria-hidden="true">captive_portal</span>
-                        <a href="#" target="_blank" class="meta-text">sm8rtdev.online</a>
-                    </li>
-                </ul>
-
-                <ul class="profile-stats">
-                    <li class="stats-item">
-                        <span class="body">57</span> Repos
-                    </li>
-                    <li class="stats-item">
-                        <span class="body">6</span> followers
-                    </li>
-                    <li class="stats-item">
-                        <span class="body">13</span> Following
-                    </li>
-                </ul>
-
-                <div class="footer">
-                    <p class="copyright">&copy; 2023 smartdev</p>
+            <!-- 
+            - #TAb
+            -->
+            <section class="tab-container">
+                <div class="tab-list" aria-label="Tab navigation" role="tablist">
+                    <button class="tab-btn" aria-selected="true" role="tab" id="tab1" tabindex="0"
+                        aria-controls="panal-1" data-tab-btn>Repositories</button>
+                    <button class="tab-btn" aria-selected="false" role="tab" id="tab2" tabindex="-1"
+                        aria-controls="panal-2" data-tab-btn data-forked-tab-btn>Forked</button>
+                    <button class="tab-btn" aria-selected="false" role="tab" id="tab3" tabindex="-1"
+                        aria-controls="panal-3" data-tab-btn data-followers-tab-btn>Followers</button>
+                    <button class="tab-btn" aria-selected="false" role="tab" id="tab4" tabindex="-1"
+                        aria-controls="panal-4" data-tab-btn data-following-tab-btn>Following</button>
                 </div>
-
-                <!-- <div class="profile-skeleton">
-                    <div class="skeleton avatar-skeleton"></div>
-                    <div class="skeleton title-skeleton"></div>
-                    <div class="skeleton text-skeleton text-1"></div>
-                    <div class="skeleton text-skeleton text-2"></div>
-                    <div class="skeleton text-skeleton text-3"></div>
-                </div> -->
+                <div class="tab-panel" role="tabpanel" id="panal-1" aria-labelledby="tab-1" tabindex="0" data-tab-panel
+                    data-repo-panel></div>
+                <div class="tab-panel" role="tabpanel" id="panal-2" aria-labelledby="tab-2" tabindex="0" hidden
+                    data-tab-panel data-forked-panel></div>
+                <div class="tab-panel" role="tabpanel" id="panal-3" aria-labelledby="tab-3" tabindex="0" hidden
+                    data-tab-panel data-followers-panel></div>
+                <div class="tab-panel" role="tabpanel" id="panal-4" aria-labelledby="tab-4" tabindex="0" hidden
+                    data-tab-panel data-following-panel></div>
             </section>
 
-            </div>
+            <!-- 
+            - #Error Content
+            -->
+            <section class="error" data-error></section>
+
+            <!--
+            - #Footer
+            -->
+            <footer class="footer container">
+                <p class="copyright">&copy; 2023 smartdev - Hessen Nasser</p>
+            </footer>
+
+        </div>
+
+        </div>
     </main>
-
-
-
-
-
 </body>
 
 </html>
